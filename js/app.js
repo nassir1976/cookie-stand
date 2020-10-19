@@ -19,6 +19,7 @@ function CookiesStores(minCustomerPerHr, maxCustomerPerHr, avgcookiespurchasedPe
   this.randomCustomerPerHr = function () {
       return Math.floor(Math.random() * (this.maxCustomerPerHr - this.minCustomerPerHr + 1) + this.minCustomerPerHr);
   },
+
       this.cookiesPerHrArray = function () {
           for (var i = 0; i < operationHour.length; i++) {
               var cookies = Math.ceil(this.getcustomerPerHr() * this.avgcookiespurchasedPercustomer);
@@ -122,3 +123,4 @@ function CookiesStores(minCustomerPerHr, maxCustomerPerHr, avgcookiespurchasedPe
           
       }
   
+
