@@ -202,7 +202,6 @@ var lima = {
 
   },
 };
-
 seattle.render();
 tokyo.render();
 dubai.render();
