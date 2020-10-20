@@ -89,7 +89,7 @@ function CookiesStores (storeName, minCustomerPerHr, maxCustomerPerHr, avgcookie
    
    //============================== Render Table Raw/hr====================================//
 
-   var foterrow = function () {
+   var footerrow = function () {
     var trEl = document.createElement('tr');
     var tdEl = document.createElement('td');
     tdEl.textContent = 'Total per hour: ' ;
@@ -122,4 +122,4 @@ new CookiesStores('Dubai', 11, 38, 3.7);
 new CookiesStores('Paris', 20, 38, 2.3);
 new CookiesStores('Lima', 2, 16, 4.6);
 
-foterrow();
+footerrow();
