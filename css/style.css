@@ -92,10 +92,6 @@ a:visited {
   color: rgb(59, 7, 7);
 }
 
-fieldset{
-  border: 1px solid black;
-}
-
 header{
   text-align: center;
 }
@@ -129,27 +125,6 @@ td {
   background-color: rgb(153, 166, 185);
 }
 
-form{
-  font-size: 12px;
-  width: 450px;
-  height: 200px;
-  text-align: left;
-  line-height: 2em;
-}
-
-fieldset{
-  height: 160px;
-  margin-top: 5px;
-  padding-top: 5px;
-  margin-left: 5px;
-  padding-left: 5px;
-}
-
-#inner-field{
-  width: 400px;
-  height: 100px;
-}
-
 #logo{
   position: absolute;
   top: 0px;
@@ -178,7 +153,13 @@ fieldset{
 .data{
   /* sans-serif */
   font-family: 'Montserrat', sans-serif;
-  color: rgb(19, 54, 6);
+  color: rgb(54, 6, 6);
+  font-size: 200px;
+  
+}
+h2 {
+  font-size: 25px;
+  color: red;
 }
 
 .main-img{
