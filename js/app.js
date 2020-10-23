@@ -47,7 +47,7 @@ CookiesStores.prototype.getHourlycookiesPerHr = function () {
 var rowHeaderrender = function () {
   var trEl = document.createElement('tr');
   var thEl = document.createElement('th');
-  thEl.textContent = '';
+  thEl.textContent = 'location';
   trEl.appendChild(thEl);
   for (var i = 0; i < CookiesStores.operationHour.length; i++) {
     var tdEl = document.createElement('td');
