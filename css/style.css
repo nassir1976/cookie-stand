@@ -29,7 +29,7 @@ h2{
   
 
 }
-h3{
+  article p {
   font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -62,11 +62,19 @@ nav{
   background-color: brown;
   text-align: start;
   color: blueviolet;
+  cursor: pointer;  
   
   
 }
 
-
+#image1{
+  float: left;
+  height: 250;
+  width: 280;
+}
+#image2{
+  float: right;
+}
 li{
   width: 320px;
   height: 45px;
@@ -87,18 +95,6 @@ a:link {
   text-align: center;
 }
 
-
-a:visited {
-  color: rgb(59, 7, 7);
-}
-
-header{
-  text-align: center;
-}
-
-aside{
-  text-align: center;
-}
 
 article{
   width: 900px;
