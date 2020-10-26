@@ -11,44 +11,51 @@
   <header>
     <figure><img id="logo" src="img/salmon.png" alt="salmon" title="salmon" /></figure>
     <h1>Salmon Cookies</h1>
-    
-      <ul>
-        <li>
-          <a href="index.html">Go Home</a>
-        </li>
-      </ul>
-  
+
+    <ul>
+      <li>
+        <a href="index.html">Go Home</a>
+      </li>
+    </ul>
+
   </header>
   <main>
+    <section>
+      <table id="tableContainer"></table>
+      <form id="userForm">
+        <fieldset>
+          <legend id= legend>
+            <h2>Enter your store information here:</h2>
+          </legend>
+          <label>location:</label>
+          <input id="storeName" type="text" placeholder="new location here..." required="required" />
+          </br>
+          <label>MinCustomersPerHr:</label>
+          <input id="minCustomerPerHr" type="number" min="0" placeholder="number" required="required" />
+          </br>
+          <label>MaxCustomersPerHr:</label>
+          <input id="maxCustomerPerHr" type="number" min="0" placeholder="numbers" required="required" />
+          </br>
+          <label>avgCookiespurchasedPerCustomer:</label>
+          <input id="avgcookiespurchasedPercustomer" type="number" min="0" placeholder="numbers" required="required" />
+          </br>
+          <button value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
     <section class="data">
       <h2>Sales Data:</h2>
-      <table id="cookiesstore-table">
-        <thead id="cookiesstore-table-head">
-        </thead>
-        <tbody id="cookiesstore-table-body">
-        </tbody>
-        <tfoot id="cookiesstore-table-foot">
-        </tfoot>
-      </table>
+      <table id="cookiesstore-table"></table>
+      <figure><img id="family" src="img/family.jpg" alt="fish" title="family" /></figure>
     </section>
-
-
-
-
-
-    <!-- <ul id="seattle">Seattle</ul>
-    <ul id="tokyo">Tokyo</ul>
-    <ul id="dubai">Dubai</ul>
-    <ul id="paris">Paris</ul>
-    <ul id="lima">Lima</ul> --> 
-    <!-- <table id="cookiesstore-table"></table>  -->
   </main>
 
 
+  <footer>
+    <nav id="legal">&copy; Salmon Cookies | Facebook | Instagram</nav>
+    <h2> Contact Me <a href="https://www.linkedin.com/in/nassir-abegaz-5338b326/edit/intro/">Nassir Abegaz</a></h2>
+  </footer>
   <script src="js/app.js"></script>
-
-
-
 </body>
 
 </html>

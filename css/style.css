@@ -1,5 +1,5 @@
 html{
-  background-color:rgba(192, 147, 50, 0.301);
+  background-color:white;
 }
 body{
   background-color: rgb(250, 231, 231);
@@ -7,7 +7,7 @@ body{
   /* serif */
   font-family:serif;
   font-size: 15px;
-  width: 960px;
+  width:1090px;
   margin:auto;
 }
 
@@ -17,6 +17,7 @@ h1{
   background-color: black;
   font-style: oblique;
   color: brown;
+  width: 1090;
 }
      
 
@@ -51,11 +52,14 @@ section{
   text-align: center;
 }
 
+ li.Opening{
+   background-color: greenyellow;
 
+}
 
 
 nav{
-  width: 640px;
+  width: 770px;
   height: 70px;
   font-size: 20px;
   padding-left: 320px;
@@ -112,6 +116,7 @@ table{
 
 th{
   margin: 1px;
+  padding: 15px;
 }
 
 td {
@@ -119,6 +124,7 @@ td {
   font-size: 15px;
   border: 1px solid black;
   background-color: rgb(153, 166, 185);
+  padding: 15px;
 }
 
 #logo{
@@ -149,15 +155,20 @@ td {
 .data{
   /* sans-serif */
   font-family: 'Montserrat', sans-serif;
-  color: rgb(54, 6, 6);
-  font-size: 200px;
+  color:red;
+  font-size: 200px; 
+}
+#cookiesstore-table{
+  color: blue;
+  font-family: cursive;
   
 }
-h2 {
-  font-size: 25px;
-  color: red;
-}
 
+#legend {
+  color: blue;
+  cursor: pointer; 
+}
+  
 .main-img{
   height: 200px;
   margin: 15px;
@@ -171,3 +182,17 @@ h2 {
   margin-left: 54px;
   margin-right: 54px;
 }
+ 
+#outer-field{
+font-size: 15px;
+}
+#inner-field{
+  font-size: 15px;
+color: blue;
+}
+
+
+
+
+
+
