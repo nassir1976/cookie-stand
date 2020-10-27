@@ -168,6 +168,16 @@ td {
   color: blue;
   cursor: pointer; 
 }
+#store_Name{
+  background-color:white;
+  
+
+}
+label{
+  font-style: oblique;
+  font-size: 20px;
+}
+
   
 .main-img{
   height: 200px;

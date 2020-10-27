@@ -127,29 +127,49 @@ footerrow();
   // =========== FORMS========
 
 var userInputForm = document.getElementById('user-Form');
-userForm.addEventListener('submit', handlesubmit);
+userInputForm.addEventListener('submit', handleSubmit);
 
-function handlesubmit(event){
-  event.preventDefault();
-  // var removeFooter = document.getElementById('stores').lastChild;
-  // removeFooter.remove();
+function handleSubmit(event){
+  event.preventDefault();  
 
-  var storeName =  event.target.inputstoreName.value;
-  var minCustomerPerHr = parseInt(event.target.inputminCustomerPerHr.value);
-  var maxCustomerPerHr = parseInt(event.target.inputmaxCustomerPerHr.value);
-  var avgcookiespurchasedPercustomer = parseInt (event.target.inputavgcookiespurchasedPercustomer.value);
+  var storeName =  event.target.storeName.value;
+  var minCustomerPerHr = event.target.minCustomerPerHr.value; 
+  var maxCustomerPerHr = event.target.maxCustomerPerHr.value;   
+  var avgcookiespurchasedPercustomer = event.target.avgcookiespurchasedPercustomer.value;
+
+  if(!storeName || !minCustomerPerHr || !maxCustomerPerHr || !avgcookiespurchasedPercustomer) {
+    
+   return alert('please fill out the field .');
+  }
+
+  if(isNaN(minCustomerPerHr)) {
+    event.target.minCustomerPerHr.value = null;
+   return alert('You should put a number only!');
+  };
+ 
+  if(isNaN(maxCustomerPerHr)) {
+    event.target.maxCustomerPerHr = null;
+    return alert('You should put a number only!');
+  };
+
+  if(isNaN(avgcookiespurchasedPercustomer)){
+    event.target.avgcookiespurchasedPercustomer.value = null;
+    return alert('You should put a number only!');
+  }
+ if(minCustomerPerHr < 0 || maxCustomerPerHr < 0 || avgcookiespurchasedPercustomer < 0  ){
+  event.target.minCustomerPerHr.value = null;
+  event.target.maxCustomerPerHr.value = null;
+  event.target.avgcookiespurchasedPercustomer.value = null;
+ return alert ( 'the value it should be greater than zero ');
+
+ }
+  CookiesStores.tabledata.deleteRow(-1)
+  new CookiesStores(storeName, +minCustomerPerHr, +maxCustomerPerHr , +avgcookiespurchasedPercustomer);
+  footerrow();
+
   
-  new CookiesStores(storeName, minCustomerPerHr, maxCustomerPerHr , avgcookiespurchasedPercustomer)
-  event.target.inputtoreName.value = null;
-  event.target.inputminCustomerPerHr.value =null;
-  event.target.inputmaxCustomerPerHr.value = null;
-  event.target.inputavgcookiespurchasedPercustomer.value = null;
-   NewFooterrow();
 };
 
 
-    
-
- 
 
 
