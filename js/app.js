@@ -1,5 +1,5 @@
 'use strict';
-
+    // constructor method //
 CookiesStores.operationHour = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 
@@ -139,28 +139,28 @@ function handleSubmit(event){
 
   if(!storeName || !minCustomerPerHr || !maxCustomerPerHr || !avgcookiespurchasedPercustomer) {
     
-   return alert('please fill out the field .');
+    alert('please fill out the field .');
   }
 
   if(isNaN(minCustomerPerHr)) {
     event.target.minCustomerPerHr.value = null;
-   return alert('You should put a number only!');
+   alert('You should put a number only!');
   };
  
   if(isNaN(maxCustomerPerHr)) {
     event.target.maxCustomerPerHr = null;
-    return alert('You should put a number only!');
+    alert('You should put a number only!');
   };
 
   if(isNaN(avgcookiespurchasedPercustomer)){
     event.target.avgcookiespurchasedPercustomer.value = null;
-    return alert('You should put a number only!');
+     alert('You should put a number only!');
   }
  if(minCustomerPerHr < 0 || maxCustomerPerHr < 0 || avgcookiespurchasedPercustomer < 0  ){
   event.target.minCustomerPerHr.value = null;
   event.target.maxCustomerPerHr.value = null;
   event.target.avgcookiespurchasedPercustomer.value = null;
- return alert ( 'the value it should be greater than zero ');
+  alert ( 'the value it should be greater than zero ');
 
  }
   CookiesStores.tabledata.deleteRow(-1)
